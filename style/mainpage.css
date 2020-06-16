@@ -1,0 +1,404 @@
+/* Меню */
+* {
+    box-sizing: border-box;
+}
+
+.game_img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.game_link {
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    z-index: 150px;
+    border-radius: 50%;
+    border: none;
+    vertical-align: middle;
+}
+
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("PT Sans"), local("PTSans-Regular"),
+        url(https://fonts.gstatic.com/s/ptsans/v11/jizaRExUiTo99u79D0KEwA.ttf) format("truetype");
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #eee;
+}
+
+body {
+    font-family: "PT Sans", Arial, Verdana;
+    background-color: #eee;
+}
+
+.logo {
+    width: 385px;
+
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    position: relative;
+    background-color: #2c3e50;
+    z-index: 7;
+}
+
+.menu li {
+    float: left;
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    display: -webkit-box;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    font-size: 18px;
+    z-index: 9;
+}
+
+a.active {
+
+    pointer-events: auto;
+}
+
+li.slider {
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    z-index: 8;
+    -webkit-transition: left 0.4s, background-color 0.4s;
+    transition: left 0.4s, background-color 0.4s;
+}
+
+.menu li:nth-child(1):hover~.slider,
+.menu li:nth-child(1):focus~.slider,
+.menu li:nth-child(1):active~.slider {
+    left: 0;
+    background-color: #3498db;
+}
+
+.menu li:nth-child(2):hover~.slider,
+.menu li:nth-child(2):focus~.slider,
+.menu li:nth-child(2):active~.slider {
+    left: 25%;
+    background-color: #9b59b6;
+}
+
+.menu li:nth-child(3):hover~.slider,
+.menu li:nth-child(3):focus~.slider,
+.menu li:nth-child(3):active~.slider {
+    left: 50%;
+    background-color: #e67e22;
+}
+
+.menu li:nth-child(4):hover~.slider,
+.menu li:nth-child(4):focus~.slider,
+.menu li:nth-child(4):active~.slider {
+    left: 75%;
+    background-color: #16a085;
+}
+
+/* Конец меню */
+
+/* login */
+.login {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    position: absolute;
+    top: 28px;
+    right: 40px;
+}
+
+/* Форма записи*/
+.singup {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(65, 30, 221);
+    height: 220px;
+    width: 78%;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.fless {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.input_singup {
+    font-size: 20px;
+    height: 35px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+}
+
+.btn_singup {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    background-color: crimson;
+    font-size: 20px;
+    height: 39px;
+    width: 250px;
+    border-radius: 50px;
+    border: none;
+
+}
+
+.form_singup {
+    padding-top: 15px;
+
+
+}
+
+a.agreement {
+    color: white;
+}
+
+
+
+
+img.info_h1 {
+    width: device-width;
+}
+
+
+/*как это работает*/
+.p {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    text-align: left;
+
+}
+
+.lenta1 {
+    margin-top: 30px;
+    width: 78%;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    padding-top: 20px;
+}
+
+.img_inlent1 {
+    width: 500px;
+    height: 350px;
+}
+
+.contanier_info {
+    position: absolute;
+    right: 50px;
+    top: 125px;
+    width: 540px;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+/*---*/
+
+.contanier_h {
+    margin-top: 30px;
+    width: 78%;
+    height: 700px;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+
+}
+
+.title1 {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+
+
+}
+
+#cont {
+    font-size: 35px;
+    color: white;
+    background-color: rgb(57, 70, 255);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding-top: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#gold_cont {
+    font-size: 35px;
+    color: white;
+    background-color: gold;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding-top: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#f_cont {
+    font-size: 18px;
+    width: 250px;
+    position: absolute;
+    top: 113px;
+}
+
+.cont_1 {
+    position: absolute;
+    top: 120px;
+    left: 100px;
+}
+
+.for_cont1 {
+
+    left: 180px;
+}
+
+.cont_2 {
+    position: absolute;
+    top: 120px;
+    left: 415px;
+}
+
+.for_cont2 {
+    left: 495px;
+}
+
+
+.cont_3 {
+    position: absolute;
+    top: 120px;
+    left: 750px;
+}
+
+.for_cont3 {
+    left: 830px;
+}
+
+.cont_4 {
+    position: absolute;
+    top: 230px;
+    left: 100px;
+
+}
+
+#f_cont2 {
+    font-size: 18px;
+    width: 250px;
+    position: absolute;
+    top: 230px;
+}
+
+.for_cont4 {
+
+    left: 180px;
+}
+
+.cont_5 {
+    position: absolute;
+    top: 230px;
+    left: 415px;
+}
+
+.for_cont5 {
+    font-size: 18px;
+    width: 250px;
+    position: absolute;
+    left: 495px;
+    top: 220px;
+}
+
+/*--------*/
+
+.title2 {
+    position: absolute;
+    top: 310px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    left: 100px;
+}
+
+#title_cadvantage {
+    color: #edf3ff;
+    font-size: 16px;
+    background-color: rgb(57, 70, 255);
+    margin: 12px 0px 0px;
+    padding: 16px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.body {
+    color: rgb(74, 74, 74);
+    width: 270px;
+    position: absolute;
+    top: 400px;
+    left: 100px;
+}
+
+#txt_inBody {
+    padding-left: 8px;
+}
+
+.body_2 {
+    color: rgb(74, 74, 74);
+    width: 270px;
+    position: absolute;
+    top: 400px;
+    left: 450px;
+}
+
+.body_3 {
+    color: rgb(74, 74, 74);
+    width: 270px;
+    position: absolute;
+    top: 400px;
+    left: 800px;
+}

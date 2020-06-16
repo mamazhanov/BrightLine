@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Преподаватели BrightLine</title>
+    <link rel="stylesheet" href="../style/mainpage.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
+    <link rel="stylesheet" href="../style/feedwindow.css" />
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../../img/пнг лого1.svg" alt="" />
+
+        <ul class="menu">
+            <li><a href="mainpage.html " class="active">Главная</a></li>
+            <li><a href="teachers.html">Преподаватели</a></li>
+            <li><a href="library.html">Библеотека</a></li>
+            <li><a href="systemlvl.html">Система уовней</a></li>
+            <li class="slider"></li>
+        </ul>
+    </header>
+
+    <a href="#" title="Вход">
+        <img src="../img/22495.png" alt="Login" class="login" onclick="show('block')" class="regButton" />
+    </a>
+
+    <!-- Задний прозрачный фон -->
+    <div onclick="show('none')" id="gray"></div>
+    <div id="window">
+        <!-- Картинка крестика -->
+
+        <div class="form">
+            <img class="close" src="../../library/img/close.png" alt="" onclick="show('none')" />
+            <form action="index.html" class="login-form">
+                <h1>Вход</h1>
+
+                <div class="txtb">
+                    <input type="text" placeholder="Логин" />
+                </div>
+
+                <div class="txtb">
+                    <input type="password" placeholder="Пароль" />
+                </div>
+
+                <input type="submit" class="logbtn" value="Войти" />
+
+                <div class="bottom-text">
+                    <a href="#">Забыли пароль?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        //Функция показа
+        function show(state) {
+            document.getElementById("window").style.display = state;
+            document.getElementById("gray").style.display = state;
+        }
+
+        $(".txtb input").on("focus", function () {
+            $(this).addClass("focus");
+        });
+
+        $(".txtb input").on("blur", function () {
+            if ($(this).val() == "") $(this).removeClass("focus");
+        });
+    </script>
+
+
+
+
+
+
+
+
+    <center>
+        <a href="/library/html/teachers.html" style="font-size: 30px; ">demo</a>
+    </center>
+
+
+
+
+
+
+
+
+
+    <!--footer-->
+    <footer>
+        <center>
+            <a href="#">
+                <img src="../img/пнг лого1.svg" alt="" class="footelogo" /></a>
+            <div></div>
+            <section>
+                <div class="middle">
+                    <a class="btn" href="https://instagram.com/e_mamazhanov">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btnblue" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a class="btn" href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                    <a class="btnblue" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a class="btn" href="#">
+                        <i class="fab fa-google"></i>
+                    </a>
+                </div>
+                <br />
+                <br /><br /><br /><br />
+                <div class="addresdiv">
+                    <h3>
+                        <a class="agreement" style="text-decoration: none;"
+                            href="https://2gis.kg/osh/search/%D1%83%D0%BB.%D0%9C%D0%B0%D1%81%D0%B0%D0%BB%D0%B8%D0%B5%D0%B2%D0%B0%20%E2%84%9673/geo/70030076150106251/72.808513%2C40.523281?m=72.807934%2C40.523169%2F20%2Fp%2F45%2Fr%2F-87.3"><img
+                                src="../img/gps_PNG63.png" class="location" />ул.Масалиева
+                            №73 </a><img src="../img/724664.svg" class="location" />+996550445545
+                    </h3>
+                </div>
+            </section>
+        </center>
+    </footer>
+</body>
+
+</html>

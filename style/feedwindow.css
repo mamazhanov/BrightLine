@@ -1,0 +1,94 @@
+/*форма для входа*/
+#window {
+    width: 350px;
+    height: 530px;
+    margin: 40px auto;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    z-index: 150;
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#gray {
+    opacity: 0.8;
+    padding: 15px;
+    background-color: rgba(1, 1, 1, 0.75);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    z-index: 100;
+    overflow: auto;
+}
+
+
+
+/*---------------------------------------------------------------------------------------*/
+
+
+
+
+.login-form {
+    width: 360px;
+    background: #f1f1f1;
+    height: 580px;
+    padding: 80px 40px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-form h1 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.txtb {
+    border-bottom: 2px solid #adadad;
+    position: relative;
+    margin: 30px 0;
+}
+
+.txtb input {
+    font-size: 15px;
+    color: #333;
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0 5px;
+    height: 40px;
+}
+
+.logbtn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: linear-gradient(120deg, #3498db, #8e44ad, #3498db);
+    background-size: 200%;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.logbtn:hover {
+    background-position: right;
+}
+
+.bottom-text {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 13px;
+}
