@@ -3,6 +3,23 @@
     box-sizing: border-box;
 }
 
+.game_img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.game_link {
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    z-index: 150px;
+    border-radius: 50%;
+    border: none;
+    vertical-align: middle;
+}
+
+
 @font-face {
     font-family: "PT Sans";
     font-style: normal;
@@ -68,7 +85,7 @@ body {
 }
 
 a.active {
-    background-color: #e74c3c;
+
     pointer-events: auto;
 }
 
@@ -78,7 +95,7 @@ li.slider {
     position: absolute;
     left: 0;
     top: 0;
-    background-color: #e74c3c;
+
     z-index: 8;
     -webkit-transition: left 0.4s, background-color 0.4s;
     transition: left 0.4s, background-color 0.4s;
@@ -122,4 +139,60 @@ li.slider {
     position: absolute;
     top: 28px;
     right: 40px;
+}
+
+/* Форма записи*/
+.singup {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(65, 30, 221);
+    height: 220px;
+    width: 78%;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.fless {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.input_singup {
+    font-size: 20px;
+    height: 35px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+}
+
+.btn_singup {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    background-color: crimson;
+    font-size: 20px;
+    height: 39px;
+    width: 250px;
+    border-radius: 50px;
+    border: none;
+
+}
+
+.form_singup {
+    padding-top: 15px;
+
+
+}
+
+a.agreement {
+    color: white;
+}
+
+
+
+
+img.info_h1 {
+    width: device-width;
 }
