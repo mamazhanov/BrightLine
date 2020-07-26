@@ -132,7 +132,7 @@ section h3.title {
   position: fixed;
   right: 4%;
   bottom: 5%;
-
+  z-index: 10;
 }
 
 
