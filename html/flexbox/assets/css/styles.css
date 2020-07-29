@@ -147,6 +147,42 @@ section h3.title {
   width: 200px;
 }
 
+.h1_title {
+  padding-bottom: 60px;
+}
+
+
+#title_cadvantage {
+  color: #edf3ff;
+  font-size: 16px;
+  background-color: rgb(41, 51, 192);
+  margin: 12px 0px 0px;
+  padding: 16px;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.5);
+}
+
+#body_block {
+  color: rgb(74, 74, 74);
+  width: 270px;
+  margin-left: 30px;
+
+}
+
+#txt_inBody {
+  padding-left: 8px;
+  text-align: left;
+}
+
+
+
+ul.prem {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 
 section p {

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+    <title>Document</title>
+    <style>
+        /*-------------
+ 	General
+-------------*/
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font: normal 16px sans-serif;
+            color: #555;
+        }
+
+        ul,
+        nav {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+
+            opacity: 0.9;
+        }
+
+        a:hover {
+            opacity: 1;
+        }
+
+        a.btn {
+            color: #fff;
+            border-radius: 4px;
+            text-transform: uppercase;
+            background-color: #2196f3;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        hr {
+            width: 150px;
+            height: 2px;
+            background-color: #2196f3;
+            border: 0;
+            margin-bottom: 80px;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding: 125px 100px;
+        }
+
+        @media (max-width: 1000px) {
+            section {
+                padding: 100px 50px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            section {
+                padding: 80px 30px;
+            }
+        }
+
+        section h3.title {
+            color: #414a4f;
+            text-transform: capitalize;
+            font: bold 32px "Open Sans", sans-serif;
+            margin-bottom: 35px;
+            text-align: center;
+        }
+
+        section p {
+            max-width: 800px;
+
+            margin-bottom: 35px;
+            padding: 0 20px;
+            line-height: 2;
+        }
+
+
+
+        .h1_title {
+            padding-bottom: 60px;
+        }
+
+
+        #title_cadvantage {
+            color: #edf3ff;
+            font-size: 16px;
+            background-color: rgb(41, 51, 192);
+            margin: 12px 0px 0px;
+            padding: 16px;
+            text-align: left;
+            border-radius: 5px;
+            box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.5);
+        }
+
+        #body_block {
+            color: rgb(74, 74, 74);
+            width: 270px;
+            margin-left: 30px;
+
+        }
+
+        #txt_inBody {
+            padding-left: 8px;
+        }
+
+
+
+        ul.prem {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="blocks">
+        <h2 class="h1_title">НАШИ ПРЕИМУЩЕСТВА</h2>
+        <ul class="prem">
+            <li>
+                <div id="body_block">
+                    <div id="title_cadvantage">
+                        Уникальная программа преподавания, разработанная преподавательским составом компании
+                        «BrightLine».
+                    </div>
+                    <p id="txt_inBody">
+                        Это упрощенная и ускоренная подача английской грамматики. Мы не учим правила, но доводим до
+                        автоматизма
+                        грамматическую память
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div id="body_block">
+                    <div id="title_cadvantage">
+                        Человеческий подход
+                    </div>
+                    <p id="txt_inBody">
+                        Учитывем вашу особенность, а не занимаемся конвейрным обучением.
+                    </p>
+                </div>
+
+            </li>
+            <li>
+                <div id="body_block">
+                    <div id="title_cadvantage">
+                        Понятная грамматика
+                    </div>
+                    <p id="txt_inBody">Объясняем правила простым языком и сразу жеобрабатываем их на примерах из
+                        реальной жизни</p>
+                </div>
+            </li>
+            <li>
+                <div id="body_block">
+                    <div id="title_cadvantage">
+                        Ускоренный курс обучения.
+                    </div>
+                    <p id="txt_inBody"> Длительность - 25 дней.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>
