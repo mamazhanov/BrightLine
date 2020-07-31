@@ -2,183 +2,174 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
-    <title>Document</title>
-    <style>
-        /*-------------
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+  <title>Document</title>
+  <style>
+    /*-------------
  	General
 -------------*/
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        html {
-            font: normal 16px sans-serif;
-            color: #555;
-        }
+    html {
+      font: normal 16px sans-serif;
+      color: #555;
+    }
 
-        ul,
-        nav {
-            list-style: none;
-        }
+    ul,
+    nav {
+      list-style: none;
+    }
 
-        a {
-            text-decoration: none;
-            color: inherit;
-            cursor: pointer;
+    a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
 
-            opacity: 0.9;
-        }
+      opacity: 0.9;
+    }
 
-        a:hover {
-            opacity: 1;
-        }
+    a:hover {
+      opacity: 1;
+    }
 
-        a.btn {
-            color: #fff;
-            border-radius: 4px;
-            text-transform: uppercase;
-            background-color: #2196f3;
-            font-weight: 800;
-            text-align: center;
-        }
+    a.btn {
+      color: #fff;
+      border-radius: 4px;
+      text-transform: uppercase;
+      background-color: #2196f3;
+      font-weight: 800;
+      text-align: center;
+    }
 
-        hr {
-            width: 150px;
-            height: 2px;
-            background-color: #2196f3;
-            border: 0;
-            margin-bottom: 80px;
-        }
+    hr {
+      width: 150px;
+      height: 2px;
+      background-color: #2196f3;
+      border: 0;
+      margin-bottom: 80px;
+    }
 
-        section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-            padding: 125px 100px;
-        }
-
-        @media (max-width: 1000px) {
-            section {
-                padding: 100px 50px;
-            }
-        }
-
-        @media (max-width: 600px) {
-            section {
-                padding: 80px 30px;
-            }
-        }
-
-        section h3.title {
-            color: #414a4f;
-            text-transform: capitalize;
-            font: bold 32px "Open Sans", sans-serif;
-            margin-bottom: 35px;
-            text-align: center;
-        }
-
-        section p {
-            max-width: 800px;
-
-            margin-bottom: 35px;
-            padding: 0 20px;
-            line-height: 2;
-        }
+      padding: 125px 100px;
+    }
 
 
 
-        .h1_title {
-            padding-bottom: 60px;
-        }
 
 
-        #title_cadvantage {
-            color: #edf3ff;
-            font-size: 16px;
-            background-color: rgb(41, 51, 192);
-            margin: 12px 0px 0px;
-            padding: 16px;
-            text-align: left;
-            border-radius: 5px;
-            box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.5);
-        }
+    .middle {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      text-align: center;
+      background-color: #e0ffff;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
 
-        #body_block {
-            color: rgb(74, 74, 74);
-            width: 270px;
-            margin-left: 30px;
+    .btn1 {
+      display: inline-block;
+      width: 90px;
+      height: 90px;
+      background: #f1f1f1;
+      margin: 10px;
+      border-radius: 30%;
+      box-shadow: 0 5px 15px -5px #00000070;
+      color: #3498db;
+      overflow: hidden;
+      position: relative;
+    }
 
-        }
+    .btn1 i {
+      line-height: 90px;
+      font-size: 26px;
+      transition: 0.2s linear;
+    }
 
-        #txt_inBody {
-            padding-left: 8px;
-        }
+    .btn1:hover i {
+      transform: scale(1.3);
+      color: #f1f1f1;
+    }
 
+    .btn1::before {
+      content: "";
+      position: absolute;
+      width: 120%;
+      height: 120%;
+      background: #3498db;
+      transform: rotate(45deg);
+      left: -110%;
+      top: 90%;
+    }
 
+    .btn1:hover::before {
+      animation: aaa 0.7s 1;
+      top: -10%;
+      left: -10%;
+    }
 
-        ul.prem {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-    </style>
+    @keyframes aaa {
+      0% {
+        left: -110%;
+        top: 90%;
+      }
+
+      50% {
+        left: 10%;
+        top: -30%;
+      }
+
+      100% {
+        top: -10%;
+        left: -10%;
+      }
+    }
+
+    .png-logos {
+      width: 20%;
+    }
+  </style>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 </head>
 
 <body>
-    <section class="blocks">
-        <h2 class="h1_title">НАШИ ПРЕИМУЩЕСТВА</h2>
-        <ul class="prem">
-            <li>
-                <div id="body_block">
-                    <div id="title_cadvantage">
-                        Уникальная программа преподавания, разработанная преподавательским составом компании
-                        «BrightLine».
-                    </div>
-                    <p id="txt_inBody">
-                        Это упрощенная и ускоренная подача английской грамматики. Мы не учим правила, но доводим до
-                        автоматизма
-                        грамматическую память
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div id="body_block">
-                    <div id="title_cadvantage">
-                        Человеческий подход
-                    </div>
-                    <p id="txt_inBody">
-                        Учитывем вашу особенность, а не занимаемся конвейрным обучением.
-                    </p>
-                </div>
 
-            </li>
-            <li>
-                <div id="body_block">
-                    <div id="title_cadvantage">
-                        Понятная грамматика
-                    </div>
-                    <p id="txt_inBody">Объясняем правила простым языком и сразу жеобрабатываем их на примерах из
-                        реальной жизни</p>
-                </div>
-            </li>
-            <li>
-                <div id="body_block">
-                    <div id="title_cadvantage">
-                        Ускоренный курс обучения.
-                    </div>
-                    <p id="txt_inBody"> Длительность - 25 дней.</p>
-                </div>
-            </li>
-        </ul>
-    </section>
+
+
+  <div class="middle">
+    <center><img src="img/пнг лого1.svg" alt="logo" class="png-logos"></center>
+    <a class="btn1" href="#">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a class="btn1" href="#">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a class="btn1" href="#">
+      <i class="fab fa-google"></i>
+    </a>
+    <a class="btn1" href="#">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a class="btn1" href="#">
+      <i class="fab fa-youtube"></i>
+    </a>
+  </div>
+
+
+
+
 </body>
 
 </html>
