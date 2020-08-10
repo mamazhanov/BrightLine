@@ -33,9 +33,9 @@
 		<div class="sing_form">
 			<h2 class="fless">Начните обучение прямо сейчас!</h2>
 			<br>
-			<form action="" class="form_singup">
-				<input type="text" placeholder="Имя*" class="input_singup" />
-				<input type="tel" placeholder="Телефон*" class="input_singup" />
+			<form action="mail.php" method="POST" class="form_singup">
+				<input type="text" name="user_name" placeholder="Имя*" class="input_singup" />
+				<input type="tel" name="user_phone" placeholder="Телефон*" class="input_singup" />
 				<input type="submit" value="Записаться" class="btn_singup" />
 				<br /><br /><br />
 
@@ -185,8 +185,9 @@
 		<br>
 		<br>
 		<form action="mail.php" method="POST">
-			<input type="email" name="user_mail" placeholder="Email">
-			<a href="#" class="btn" type="submit">ЗАПИСАТЬСЯ</a>
+			<input type="email" name="user_email" placeholder="Email">
+
+			<button type="submit" class="btn">ЗАПИСАТЬСЯ</button>
 		</form>
 	</section>
 
